@@ -13,10 +13,23 @@ const SliderConfig = () => {
   }
 }
 
+const getBreadcrumb = () => {
+  return [
+              {
+                name: "Home",
+                url: "/"
+    },
+    {
+                name: "Choix Pays",
+                url: "/choix-pays"
+              }
+            ];
+}
+
 
 const ChoixPays = (props) => {
   return (
-    <Template slider={SliderConfig()}>
+    <Template slider={SliderConfig()} breadcrumb={getBreadcrumb()}>
       <h1>Choisir un pays</h1>
       <div class="article-section">
         <PaysList/>

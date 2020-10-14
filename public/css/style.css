@@ -16,9 +16,6 @@ $$  /   \$$ |$$ |$$ |\$$$$$$$ |         $$ |$$ |      $$ |$$$$$$$  |
 /* Pour utliser la police Poppins (textes) */
 /* font-family: 'Poppins', sans-serif; */
 
-/* Pour utiliser la police Cabin (titres) */
-/* font-family: 'Cabin Sketch', cursive; */
-
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -647,7 +644,8 @@ textarea{
         h3,
         h4,
         h5 {
-            font-family: 'Cabin Sketch', cursive;
+            font-family: 'Poppins',
+            sans-serif;
             color: 000000; /* a definir */
             padding:0px; /* a definir */
             margin:0px; /* a definir */

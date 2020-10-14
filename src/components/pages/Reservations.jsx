@@ -3,12 +3,23 @@ import Template from '../template/Template.jsx';
 
 
 
-
+const getBreadcrumb = () => {
+  return [
+              {
+                name: "Home",
+                url: "/"
+    },
+    {
+                name: "Reservations",
+                url: "/reservations"
+              }
+            ];
+}
 
 
 const Reservations = () => {
   return (
-    <Template>
+    <Template breadcrumb={getBreadcrumb()}>
       <div>Reservations</div>
     </Template>
   );

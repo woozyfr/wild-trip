@@ -1,10 +1,15 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-const Breadcrumb = () => {
+const Breadcrumb = (props) => {
+  if (!props.length) {
+    return (<div></div>)
+  }
   return (
     <ul className="breadcrumb">
-      <li><a href="javascritp:void(0)">Home</a></li>
-      <li><a href="javascritp:void(0)">Second</a></li>
+      {props.conf.map(item => (
+          <li><Link to={item.url}>{item.name}</Link></li>
+      ))}
     </ul>
   );
 }

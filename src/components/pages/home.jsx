@@ -13,11 +13,19 @@ const SliderConfig = () => {
   }
 }
 
+const getBreadcrumb = () => {
+  return [
+              {
+                name: "Home",
+                url: "/"
+              }
+            ];
+}
 
 const Home = () => {
-  
+  console.log(getBreadcrumb());
   return (
-<Template slider={SliderConfig()}>
+    <Template slider={SliderConfig()} breadcrumb={getBreadcrumb()}>
     
     <section class="index-bloc">
       <div>

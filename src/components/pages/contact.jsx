@@ -14,11 +14,47 @@ const SliderConfig = () => {
 }
 
 
+const getBreadcrumb = () => {
+  return [
+              {
+                name: "Home",
+                url: "/"
+              }
+            ];
+}
+
+
 
 const Contact = (props) => {
   return (
     <Template slider={SliderConfig()}>
-      <div>Contact</div>
+
+    <h1>Contact</h1>
+
+    <form>
+      <div>
+        <input type="text" id="formsPrenom" placeholder="Prenom"/>
+      </div>
+
+      <div>
+        <input type="text" id="formsNom" placeholder="Nom"/>
+      </div>
+
+      <div>
+        <input type="email" id="formsEmail" placeholder="Email"/>
+      </div>
+
+      <div>
+        <input type="text" id="formsTelephone" placeholder="Téléphone"/>
+      </div>
+
+      <div>
+        <textarea id="formsMessage" name="message" rows="5"  placeholder="Votre message"></textarea>
+      </div>
+      <div class="center">
+        <button type="submit" class="btn btn-default buzz-out-on-hover">Envoyer</button>
+      </div>
+    </form>
     </Template>
   );
 }

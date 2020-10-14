@@ -3,16 +3,19 @@ import Header from './Header';
 import Footer from './Footer';
 import Breadcrumb from '../elements/Breadcrumb';
 import Slider from '../elements/Slider';
+import FixyButton from '../elements/FixyButton';
+
 const Template = (props) => {
   return (
     <div>
       <Header />
       <Slider conf={props.slider}/>
       <main className="container main">
-        <Breadcrumb/>
+        <Breadcrumb conf={props.breadcrumb}/>
         {props.children}
       </main>
-      <Footer/>
+      <Footer />
+      <FixyButton/>
     </div>
   );
 }
