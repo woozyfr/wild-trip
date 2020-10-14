@@ -1,25 +1,30 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 const Navs = () => {
   return (
-      <div>
+    <div>
+      
+
             <header className="header">
               <div className="container">
-                <a href="#"><img src="images/logo_w_small.png" className="logo" alt="Bienvenue sur WildTrip"/></a>
+                <Link to="/"><img src={process.env.PUBLIC_URL + '/images/logo_w_small.png'} className="logo" alt="Bienvenue sur WildTrip"/></Link>
                 <input className="menu-btn" type="checkbox" id="menu-btn" />
-                <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
                 <ul className="menu">
-                  <li><a href="#" title="Acceuil du site">Accueil</a></li>
-                  <li><a href="#" title="Choix du pays">Choix Pays</a></li>
-                  <li><a href="#"  title="Contactez-nous">Contact</a></li>
+                  <li><Link to="/">Accueil</Link></li>
+                  <li><Link to="/choix-pays">Choix Pays</Link></li>
+                  <li><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
             </header>
-            <div class="fixmenu"></div>
+            <div className="fixmenu"></div>
       </div>
   );
 }
 
 
 export default Navs;
+
+
+

@@ -1,6 +1,6 @@
 import React from "react";
 import Template from '../template/Template.jsx';
-
+import PaysList from '../elements/Pays/PaysList';
 
 
 const SliderConfig = () => {
@@ -14,12 +14,14 @@ const SliderConfig = () => {
 }
 
 
-
-const Contact = (props) => {
+const ChoixPays = (props) => {
   return (
     <Template slider={SliderConfig()}>
-      <div>Contact</div>
+      <h1>Choisir un pays</h1>
+      <div class="article-section">
+        <PaysList/>
+      </div>
     </Template>
   );
 }
-export default Contact;
+export default ChoixPays;

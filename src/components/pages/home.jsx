@@ -1,11 +1,24 @@
 import React from "react";
-import Breadcrumb from '../elements/Breadcrumb';
 import News from '../elements/News/News';
+import Template from '../template/Template.jsx';
+
+
+const SliderConfig = () => {
+  return {
+    title: "Choix déstination",
+    subtitle: "Embarcation immédiate.",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem totam magnam, cumque doloribus impedit soluta quam distinctio",
+    backgroundImage:"images/defaultslider.jpg",
+    backgroundPosition:"center 50%"
+  }
+}
+
 
 const Home = () => {
+  
   return (
-<div>
-    <Breadcrumb/>
+<Template slider={SliderConfig()}>
+    
     <section class="index-bloc">
       <div>
         <h1>Bienvenue sur WildTrip</h1>
@@ -78,7 +91,7 @@ const Home = () => {
           </div>
       </div>
     </section>
-            </div>
+            </Template>
   );
 }
 

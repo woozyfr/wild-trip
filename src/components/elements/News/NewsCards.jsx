@@ -1,5 +1,4 @@
 import React from "react";
-import Proptypes from "prop-types";
 
 const NewsCards = (props) => {
   let classes = ["news-bloc", "buzz-out-on-hover","news-bloc-"+props.data.category_key];

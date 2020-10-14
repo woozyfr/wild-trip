@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -7,12 +7,12 @@ const Footer = () => {
 <footer>
   <div className="container">
     <div className="bottom_flex-container">
-      <div className="item left"> <img src="images/logo_w_small.png" className="img-responsive" alt="WildTrip site de voyage"/></div>
+      <div className="item left"> <img src={process.env.PUBLIC_URL + '/images/logo_w_small.png'} className="img-responsive" alt="WildTrip site de voyage"/></div>
       <div className="item center">
         <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Choisir un pays</a></li>
-          <li><a href="#">Plan du site</a></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/choix-pays">Choisir un pays</Link></li>
+          <li>Plan du site</li>
         </ul></div>
       <div className="item center">
         <img className="social-icon" alt="Youtube" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTIyNC4xMTMyODEgMzAzLjk2MDkzOCA4My4yNzM0MzgtNDcuOTYwOTM4LTgzLjI3MzQzOC00Ny45NjA5Mzh6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptMTU5Ljk2MDkzOCAyNTYuMjYxNzE5czAgNTEuOTE3OTY5LTYuNTg1OTM4IDc2Ljk1MzEyNWMtMy42OTE0MDYgMTMuNzAzMTI1LTE0LjQ5NjA5NCAyNC41MDc4MTItMjguMTk5MjE5IDI4LjE5NTMxMi0yNS4wMzUxNTYgNi41ODk4NDQtMTI1LjE3NTc4MSA2LjU4OTg0NC0xMjUuMTc1NzgxIDYuNTg5ODQ0cy05OS44Nzg5MDYgMC0xMjUuMTc1NzgxLTYuODUxNTYyYy0xMy43MDMxMjUtMy42ODc1LTI0LjUwNzgxMy0xNC40OTYwOTQtMjguMTk5MjE5LTI4LjE5OTIxOS02LjU4OTg0NC0yNC43Njk1MzEtNi41ODk4NDQtNzYuOTQ5MjE5LTYuNTg5ODQ0LTc2Ljk0OTIxOXMwLTUxLjkxNDA2MiA2LjU4OTg0NC03Ni45NDkyMTljMy42ODc1LTEzLjcwMzEyNSAxNC43NTc4MTItMjQuNzczNDM3IDI4LjE5OTIxOS0yOC40NjA5MzcgMjUuMDM1MTU2LTYuNTg5ODQ0IDEyNS4xNzU3ODEtNi41ODk4NDQgMTI1LjE3NTc4MS02LjU4OTg0NHMxMDAuMTQwNjI1IDAgMTI1LjE3NTc4MSA2Ljg1MTU2MmMxMy43MDMxMjUgMy42ODc1IDI0LjUwNzgxMyAxNC40OTYwOTQgMjguMTk5MjE5IDI4LjE5OTIxOSA2Ljg1MTU2MiAyNS4wMzUxNTcgNi41ODU5MzggNzcuMjEwOTM4IDYuNTg1OTM4IDc3LjIxMDkzOHptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+PC9nPjwvc3ZnPg==" />

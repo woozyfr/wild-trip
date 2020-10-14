@@ -1,0 +1,47 @@
+[
+    {
+        "name": "France",
+        "slug": "france",
+        "visibile":true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure sunt cum ullam facilis quae. Totam, nulla, porro asperiores numquam atque unde maiores quidem earum, dicta cupiditate dolorum harum eius?",
+        "picture": "images/countries/france/paris.jpg",
+        "category": {
+            "name": "Europe",
+            "key": "europa"
+        },
+         "slide": {
+            "filename":"images/countries/france/paris-2017-home.jpg",
+            "backgroundPosition":"95%",
+            "punchline":"Gastronomie a tout va!",
+            "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate distinctio laboriosam quam ipsa explicabo,tatestur adipisicing elit."
+        }
+    },
+    {
+        "name": "Pérou",
+        "slug": "peru",
+        "visibile":true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure sunt cum ullam facilis quae. Totam, nulla, porro asperiores numquam atque unde maiores quidem earum, dicta cupiditate dolorum harum eius?",
+        "picture": "images/countries/peru/image_processing20180916-4-ezfmel.jpg",
+        "category": {
+           "name": "Amérique",
+           "key": "america"
+        }
+    },
+    {
+        "name": "Thaïlande",
+        "slug": "thailand",
+        "visibile":true,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni iure sunt cum ullam facilis quae. Totam, nulla, porro asperiores numquam atque unde maiores quidem earum, dicta cupiditate dolorum harum eius?",
+        "picture": "images/countries/thailand/thailand-1400x788-1.jpg",
+        "category": {
+            "name": "Asie",
+             "key": "asia"
+        },
+        "slide": {
+            "filename":"images/countries/thailand/thailand-1400x788-1.jpg",
+            "backgroundPosition":"80%",
+            "punchline":"De super plages!",
+            "text":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. At cupiditate distinctio laboriosam quam ipsa explicabo,tatestur adipisicing elit."
+        }
+    }
+]
