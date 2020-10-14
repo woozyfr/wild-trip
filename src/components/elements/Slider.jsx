@@ -1,11 +1,7 @@
 import React from "react";
 
 const Slider = (props) => {
-  if (!props.length) {
-    return (<div></div>)
-  }
   return (
-
     <div className="slider" style={{ background: 'url('+props.conf.backgroundImage+')', backgroundSize: "cover", backgroundPosition: props.conf.backgroundPosition  }}>
       <div className="slider-container hidden-mobile fadeIn">
         <div className="miniplan"><img src={'/images/miniplansolo.png'} alt=""/></div>
