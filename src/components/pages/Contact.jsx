@@ -13,21 +13,23 @@ const SliderConfig = () => {
   }
 }
 
-
 const getBreadcrumb = () => {
   return [
-              {
-                name: "Home",
-                url: "/"
-              }
-            ];
+            {
+              name: "Home",
+              url: "/"
+            },
+            {
+              name: "Contact",
+              url: "/contact"
+            }
+        ];
 }
-
 
 
 const Contact = (props) => {
   return (
-    <Template slider={SliderConfig()}>
+    <Template slider={SliderConfig()}  breadcrumb={getBreadcrumb()}>
 
     <h1>Contact</h1>
 

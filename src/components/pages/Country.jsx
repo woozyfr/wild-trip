@@ -20,12 +20,20 @@ const getCountryData = (slug) => {
 }
 
 
+const getBreadcrumb = () => {
+  return [
+              {
+                name: "Home",
+                url: "/"
+              }
+            ];
+}
+
 const Country = (props) => {
 const data_country = getCountryData(props.match.params.country_slug);
   
   return (
-    <Template slider={SliderConfig(data_country)}>
-
+    <Template slider={SliderConfig(data_country)}  breadcrumb={getBreadcrumb()}>
 
 <h1>{data_country.name}</h1>
 <div className="lateral-title fadeIn">{data_country.name}</div>

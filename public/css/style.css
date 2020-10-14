@@ -907,3 +907,21 @@ textarea{
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+
+.main{
+    position:relative;
+}
+
+  .lateral-title{
+    width:1400px;
+    text-align: right;
+    position: absolute;
+    font-size:160px;
+    color:#dedede;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    top:650px;
+    right:640px;
+    overflow: hidden;
+  }
