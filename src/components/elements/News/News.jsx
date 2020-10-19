@@ -3,17 +3,22 @@ import NewsCards from './NewsCards';
 import data from '../../../data/news.json';
 
 
-function getNewsData() {
-  return data;
-}
 
-const News = () => {
-  return (
-    <div>
-        {getNewsData().map(newDetails => (
-          <NewsCards data={newDetails}/>
-        ))}
-    </div>
-  );
+class News extends React.Component {
+
+  getNewsData() {
+    return data;
+  }
+
+  render() {
+          return (
+            <div>
+                    {this.getNewsData().map(newDetails => (
+                      <NewsCards data={newDetails} key={newDetails.title}/>
+                    ))}
+                </div>
+          );
+        }
 }
 export default News;
+

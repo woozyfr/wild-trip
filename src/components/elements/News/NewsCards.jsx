@@ -1,15 +1,25 @@
 import React from "react";
 
-const NewsCards = (props) => {
-  let classes = ["news-bloc", "buzz-out-on-hover","news-bloc-"+props.data.category_key];
-  return (
-  <div className={classes.join(" ")}>
-    <div className="news-bloc-title">{props.data.title}</div>
-    <p>{props.data.text}</p>
-  </div>
-  );
+
+
+class NewsCards extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.classes = ["news-bloc", "buzz-out-on-hover","news-bloc-"+this.props.data.category_key];
+    
+  }
+  
+
+  render() {
+    return (
+      <div className={this.classes.join(" ")}>
+        <div className="news-bloc-title">{this.props.data.title}</div>
+        <p>{this.props.data.text}</p>
+      </div>
+      );
+        }
 }
 export default NewsCards;
-
 
 
