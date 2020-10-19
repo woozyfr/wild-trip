@@ -1,6 +1,6 @@
 import React from "react";
 import Template from '../template/Template.jsx';
-
+import validator from 'validator';
 
 
 const SliderConfig = () => {
@@ -27,37 +27,55 @@ const getBreadcrumb = () => {
 }
 
 
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   console.log(event.target.elements.firstname.value);
+//   console.log(event.target.elements);
+//   event.target.reset();
+// }
+
 const Contact = (props) => {
+  function handleSubmit(event) {
+    console.log(this);
+  }
   return (
     <Template slider={SliderConfig()}  breadcrumb={getBreadcrumb()}>
 
     <h1>Contact</h1>
 
-    <form>
+    <form onSubmit={handleSubmit}>
       <div>
-        <input type="text" id="formsPrenom" placeholder="Prenom"/>
+        <input type="text" id="formsPrenom" placeholder="Prenom" name="firstname"/>
+        <span class="error-text">Erreur message</span>
       </div>
 
       <div>
-        <input type="text" id="formsNom" placeholder="Nom"/>
+        <input type="text" id="formsNom" placeholder="Nom" name="firstname"/>
+        <span class="error-text">Erreur message</span>
       </div>
 
       <div>
-        <input type="email" id="formsEmail" placeholder="Email"/>
+        <input type="email" id="formsEmail" placeholder="Email" name="email" className="error-input"/>
+        <span class="error-text">Erreur message</span>
       </div>
 
       <div>
-        <input type="text" id="formsTelephone" placeholder="Téléphone"/>
+        <input type="text" id="formsTelephone" placeholder="Téléphone" name="phone"/>
+        <span class="error-text">Erreur message</span>
       </div>
 
       <div>
         <textarea id="formsMessage" name="message" rows="5"  placeholder="Votre message"></textarea>
+        <span class="error-text">Erreur message</span>
       </div>
       <div class="center">
-        <button type="submit" class="btn btn-default buzz-out-on-hover">Envoyer</button>
+        <button type="submit" className="btn btn-default buzz-out-on-hover">Envoyer</button>
       </div>
+
     </form>
     </Template>
   );
 }
 export default Contact;
+
+

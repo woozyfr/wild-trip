@@ -2,13 +2,14 @@ import React from "react";
 import Navs from './Navs';
 
 
+class Header extends React.Component {
 
-const Header = () => {
-  return (
-      <Navs/> 
-  );
+  render() {
+   return (
+          <Navs/>
+          )
+    }
 }
-
 
 
 export default Header;
